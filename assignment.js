@@ -1,7 +1,7 @@
+
 // https://github.com/roni-6g/assignment3
 
-
-//First problem solution
+//First problem solving
 
 function kilometerToMeter(kilometer){
     if(kilometer <= 0){
@@ -14,7 +14,7 @@ function kilometerToMeter(kilometer){
 }
 
 
-//Second problem solution
+//Second problem solving
 
 function budgetCalculator(watch,mobile,laptop ){
     var watchPrice = watch * 50;
@@ -24,11 +24,10 @@ function budgetCalculator(watch,mobile,laptop ){
     return totaAmount;
 }
 
-//Third problem solution
+//Third problem solving
 
 function hotelCost(day){    
     var hotelRent = 0;
-
     if(day <= 10){
         hotelRent = day * 100;    
     }
@@ -46,5 +45,18 @@ function hotelCost(day){
         hotelRent = firstTenDays + secondTenDays + lastTenDays;    
     }
     return hotelRent;
+}
+
+//Forth problem solving
+
+function megaFriend(friendsName){
+    var largeName = "";  
+    friendsName.forEach(function(names) {
+      if(names.length > largeName.length) {
+        largeName = names;
+      }
+    });
+  
+    return largeName;
 }
 
